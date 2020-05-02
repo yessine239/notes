@@ -1,0 +1,28 @@
+<%- include('header') -%>
+
+<form class="create-note" action="/" method="post">
+  <input name="title" type="text" placeholder="Add title here" />
+  <textarea name="content" rows="3" placeholder="What's up?"></textarea>
+  <button type="submit"><i class="fas fa-plus"></i></button>
+</form>
+
+<section class="notes">
+  <% notes.forEach(note => { %>
+  <div class="note">
+    <div class="note-head">
+      <p><em><%- note.date %> </em></p>
+      <form action="/delete" method="post">
+        <button name="noteToDeleteId" value='<%- note.id %>' onclick="this.form.submit()">
+          <i class="fas fa-trash fa-lg"></i>
+        </button>
+      </form>
+    </div>
+    <div class="note-body">
+      <h1><%= note.title %></h1>
+      <p><%= note.content %></p>
+    </div>
+  </div>
+  <% }) %>
+</section>
+
+<%- include('footer') -%>

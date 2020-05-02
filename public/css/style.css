@@ -1,0 +1,91 @@
+body {
+  margin: 0px;
+  font-family: "Montserrat", sans-serif;
+}
+header {
+  background-color: #ffd31d;
+  font-family: "McLaren", cursive;
+  padding: 10px;
+  box-shadow: 0 3px 5px rgb(206, 206, 206);
+}
+header h1 {
+  margin-left: 70px;
+  font-weight: 600;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+.notes {
+  margin: 20px;
+}
+.note {
+  margin: 10px 10px 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 7px rgb(204, 204, 204);
+  width: 300px;
+  height: 200px;
+  display: inline-block;
+}
+.note h1{
+  margin-left: 10px;
+  font-size: 1.2em;
+}
+.note p{
+  margin-top:-5px;
+}
+.note-body{
+  padding: 20px;
+  padding-top: 0;
+}
+.note-head {
+  color: #fff;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  background-color: #ffd31d;
+  padding: 20px;
+  display: grid;
+  grid-auto-flow: column;
+  grid-column-gap: 10px;
+}
+.note-head p{
+  margin: 0;
+}
+.note-head button {
+  margin-top: 12px;
+  border: none;
+  color: #fff;
+  background-color: inherit;
+}
+.create-note {
+  position: relative;
+  margin: 20px auto;
+  display: grid;
+  grid-auto-flow: row;
+  width: 500px;
+  box-shadow: 0 0 7px rgb(204, 204, 204);
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.create-note textarea,
+.create-note input {
+  padding: 10px;
+  border: none;
+  outline: none;
+  resize: none;
+  font-size: 1.2em;
+  font-family: inherit;
+}
+.create-note button {
+  background-color: #ffd31d;
+  color: #fff;
+  bottom: -20px;
+  right:  20px;
+  position: absolute;
+  box-shadow: 0 0 7px rgb(204, 204, 204);
+  border: none;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
